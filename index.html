@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/01cba353f9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Final Project</a>
+        <nav class="navbar">
+            <a href="#" style="--i:1"class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#services" style="--i:3">Skills</a> <!-- perbaiki 'Skill' menjadi 'Skills' -->
+            <a href="#portfolio" style="--i:4">Portfolio</a> <!-- perbaiki 'Portofolio' menjadi 'Portfolio' -->
+            <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+        
+    </header>
+    <section class="home"> <!-- perbaiki 'Home' menjadi 'home' -->
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Merkie Jade Yvan Fuerte</h1>
+            <h3><span class="text"></span></h3>
+            <p>NorthWestern University</p>
+            <div class="home-sci">
+                <a href="https://www.instagram.com/merkie_fuerte/"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.facebook.com/mjyvan.fuerte/"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.tiktok.com/@mrfuerte_"><i class="bx bxl-tiktok"></i></a>
+            </div>
+            <a href="#contact" class="btn-box">More About Me</a>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://i.ibb.co/4fx7PFF/mj.png" alt="mj" border="0" />
+        </div>
+        <div class="about-text">
+            <h2>About<span>Me</span></h2>
+            <h4>Merkie Jade Yvan Fuerte</h4>
+            <p>As an 18-year-old Computer Science student, I am deeply passionate about the transformative power of technology. I am captivated by how advancements in IT are reshaping every aspect of our lives, from communication to healthcare, education, and beyond. My curiosity drives me to explore new innovations, and I am dedicated to honing my skills to contribute meaningfully to this ever-evolving field. With a vision to make a positive impact, I aspire to create solutions that improve lives, solve real-world problems, and inspire others to embrace the potential of technology.</p>
+            <div class="tab-tit">
+                <p class="tab-links active-link" onclick="opentab('skills')">My Dream</p>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>To graduate</span><br>To be a software developer</li>
+                        <li><span>To enjoy my job</span><br>To become a successful developer</li>
+                        <li><span>To become a famous Programmer</span><br>To build useful applications</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#contact" class="btn-box">More About Me</a>
+            
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablinks.classList.remove("active-link")
+                }
+
+            }
+        </script>
+    </section>
+    <section>
+        
+            <div class="container">
+                <h1 class="sub-title">ABOUT <span>ME</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-music"style='color:#00eeff'></i>
+                        <h2>HOBBY</h2>
+                        <p>Aside from coding, one of my greatest hobbies is playing musical instruments, which has always been a passion of mine. I find immense joy in expressing myself through music, whether it's playing the piano, guitar, or any other instrument. Music allows me to connect with my emotions and creativity, providing a sense of fulfillment and peace. I love exploring different genres and learning new techniques, constantly challenging myself to improve. Whether I'm playing solo or with others, music brings me joy and a deep sense of satisfaction.</p>
+                        <a href="#contact" class="read">Contact me</a>
+                    </div>
+                    
+    
+                    <div>
+                        <i class="fa-solid fa-school"style='color:#00eeff'></i>
+                        <h2>EDUCATION</h2>
+                        <p>I studied elementary at Cabeza Elementary School, where I graduated as the 2nd Honorary Mention. After that, I continued my education at Northwestern University, where I completed my Junior High School with High Honors. I further pursued my academic journey at Northwestern University, where I graduated with Honors. Currently, I am a first-year student studying Computer Science at Northwestern University, excited to expand my knowledge and skills in the field of technology.</p>
+                        <a href="#contact" class="read">Contact me</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-visual-studio' style='color:#00eeff'></i>
+                        <h2>Frontend Dev</h2>
+                        <p>I offer frontend development services that focus on creating attractive and responsive user interfaces. With expertise in HTML, CSS, and JavaScript, I'm committed to ensuring that every project not only looks great but also functions well across a variety of devices and browsers.</p>
+                        <a href="#contact" class="read">Contact me</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section> 
+    <div class="services" id="services"></div>
+    <h1 class="sub-title">My <span>Skills</span></h1>
+    <section>
+      
+        <div class="container1" id="skills">
+                <h1 class="heading1">Technical Skills</h1>
+            <div class="Technical-bars">
+            
+                <div class="bar"><i style="color: #c95d2e" class='fa-solid fa-c'></i>
+                    <div class="info">
+                        <span>C</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color: #147bbc" class="bx bxl-html5"></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color: #b0bc1e" class='bx bxl-javascript'></i>
+                    <div class="info">
+                        <span>Javascript</span>
+                    </div>
+                    <div class="progress-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color: #c322c9" class='bx bxl-python'></i>
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line python">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color: #69bcbc" class='bx bxl-css3'></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line react">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="container1">
+            <h1 class="heading1">Professional Skills</h1>
+            <div class="radial-bars">
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creativity</div>
+                </div>
+                <div class="radial-bar">
+    
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+        
+                    </svg>
+                    <div class="percentage">80%</div>
+                    <div class="text">Communication</div>
+                </div>            
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="text">Problem Solving</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">85%</div>
+                    <div class="text">TeamWork</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+        <div id="portfolio" id="project">
+            <div class="portfolio" id="portfolio"></div>
+            <div class="main-text" id="project">
+             <h2>Latest <span>Project</span></h2>
+
+            <div class="portfolio-content">
+                <div class="row">
+                    <img src="https://img.freepik.com/free-vector/gradient-colored-ui-kit-collection_23-2149218855.jpg?semt=ais_hybrid">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://img.freepik.com/free-vector/ux-ui-design-landing-page_52683-866.jpg?ga=GA1.1.1056495612.1727086293&semt=ais_hybrid">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://img.freepik.com/free-vector/modern-infographic-element-collection_52683-1777.jpg?ga=GA1.1.1056495612.1727086293">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://img.freepik.com/free-vector/dashboard-user-panel-with-flat-design_23-2147888543.jpg?ga=GA1.1.1056495612.1727086293">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://img.freepik.com/premium-photo/business-cards-templates-flyers-customizable-designs-professional-branding_1191871-29336.jpg?semt=ais_hybrid">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://img.freepik.com/free-vector/gradient-dashboard-statistic-evolution-template_23-2148284171.jpg?ga=GA1.1.1056495612.1727086293">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+               
+                
+            </div>
+        </div>
+    
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Lets work together</h4>
+            <p>I'm glad you've visited my personal portfolio website! If you have any questions, suggestions, or would like to collaborate, please feel free to contact me through this form. I will endeavor to reply to your message as soon as possible.</p>
+            <ul class="contact-list">
+                <li><i class="bx bxs-send"></i>merkieyvan@gmail.com</li>
+                <li><i class="bx bxs-phone"></i> 09455687245</li>
+            </ul>
+            <div class="contact-icons">
+                <a href="https://www.instagram.com/merkie_fuerte/"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.facebook.com/mjyvan.fuerte/"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.tiktok.com/@mrfuerte_"><i class="bx bxl-tiktok"></i></a>
+            </div>
+        </div>
+    
+        <div class="contact-form">
+            <form name="submit-to-google-sheet">
+                <input type="text" name = "Name" placeholder="Enter Your Name" required>
+                <input type="email" name="Email" placeholder= "Your Email" required>
+                <input type="text" placeholder="Enter Your Subject">
+                <textarea name = "Message" rows="6" placeholder="Enter Your Message" required></textarea>
+                <input type="submit" value="Submit" class="send">
+            </form>
+            <span id="msg">Hello</span>
+        </div>
+    </section>
+    <div class="last-text">
+        <p>credits: Merkie Fuerte</p>
+    </div>
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwInYd2SvL2GKupNo2qaz012R9EHiy0qvFE564x5HMO23H9miY_pYcqdqZ10vyixuA-/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+      </script>
+    
+    
+        <script src="index.js"></script>
+        
+    </body>
+    </html>
+        
